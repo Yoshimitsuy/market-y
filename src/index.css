@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+@media screen and (min-width: 601px) {
+    .product {
+        width: 30%;
+    }
+
+    .cart__item {
+        grid-template-columns: 3fr 15fr 5fr 1fr 8fr 1fr;
+    }
+
+    .cart__img, .cart__item-subtotal {
+        display: block;
+    }
+
+    .cart__submit {
+        max-width: 300px;
+    }
+}
